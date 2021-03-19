@@ -1,0 +1,4 @@
+from math import *
+a=float(input("Ievadi griesta garumu metros- "))
+b=float(input("Ievadi griesta platumu metros- "))
+c=int(input("Kadu budžetas tarifu gribat izveleties? Kur 1-vislets 2-videjais 3-dargs")
