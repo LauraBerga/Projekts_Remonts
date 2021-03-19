@@ -4,9 +4,9 @@ b=float(input("Ievadi griesta platumu metros- "))
 c=int(input("Kadu budžetas tarifu gribat izveleties? Kur 1-vislets 2-videjais 3-dargs")
 s=a*b
 if c==1:
-k1=16 m**2/l
-n1=12.60 euro
-d1=s/k1
+   k1=16 
+   n1=12.60 
+   d1=s/k1
 elif c==2:
 elif c==3:
 else:
