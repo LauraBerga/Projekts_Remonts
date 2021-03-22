@@ -1,7 +1,8 @@
 from math import *
 a=float(input("Ievadi griesta garumu metros- "))
 b=float(input("Ievadi griesta platumu metros- "))
-c=int(input("Kadu budžetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs - "))
+c("Budzeta tarifs")
+c=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs - "))
 s=a*b
 if c==1:
    k1=16 
