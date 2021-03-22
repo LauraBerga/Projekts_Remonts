@@ -1,14 +1,19 @@
 from math import *
 a=float(input("Ievadi griesta garumu metros- "))
 b=float(input("Ievadi griesta platumu metros- "))
-c("Budzeta tarifs")
-c=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs - "))
+c=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs "))
 s=a*b
 if c==1:
    k1=16 
-   n1=12.60 
+   n1=12
    d1=s/k1
 elif c==2:
+   k2=16 
+   n2=12
+   d2=s/k1   
 elif c==3:
+   k3=16 
+   n3=12
+   d3=s/k1   
 else:
 print("nav pareizi ievadita izvele")
