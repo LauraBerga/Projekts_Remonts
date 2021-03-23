@@ -14,6 +14,9 @@ if c==1:
    u1=d1*n1 #cana za krasku
    r1=8.56 #rullis s vedrom
    k1=1.99 #kistj 10cm
+   w1=1,89
+   o2=50
+   t2=(p/o2)*w1
    i1=(r1+k1)*l #cena vseh instrumentov vzavisimosti ot kolicestva ludej
    q1=i1+u1 #summa vsego
    print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un krasu bus- ",round(q1,2),"euro")
