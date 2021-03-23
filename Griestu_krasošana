@@ -1,4 +1,49 @@
+#m - сколько литров краски мы потратим на м2
+#n - деньги 
+#d - сколько л краски надо 
+#k - кисти 
+#r - rullis s vedrom
+#l - ludi
+#i - instrumenti
+#u - цена за краску 
+#q - общая сумма 
+#w - skotcs
 from math import *
-a=float(input("Ievadi griesta garumu metros- "))
-b=float(input("Ievadi griesta platumu metros- "))
-c=int(input("Kadu budžetas tarifu gribat izveleties? Kur 1-vislets 2-videjais 3-dargs")
+a=float(input("Ievadi griesta garumu metros - "))
+b=float(input("Ievadi griesta platumu metros - "))
+s=a*b
+print("Jusu griestu laukums ir - " ,s , "m2")
+p=(a+b)*2
+print("Jusu griestu perimetrs ir - " ,p , "m")
+l=int(input("Cik cilveku piedalisies remonta darbiem? "))
+c=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs - "))
+if c==1:
+   m1=16 
+   n1=1.26
+   d1=s/m1
+   u1=d1*n1
+   r1=8.56
+   k1=1.99
+   i1=(r1+k1)*l
+   q1=i1+u1
+   print("Visletaka budzeta tarifa ietvaros cena par krasu un darbarikiem griestu krasosanai bus - " ,round(q1,2), "eiro")
+   # это у нас цена всех инструментов в зависимости от кол-ва людей 
+elif c==2:
+   m2=13 
+   n2=3.60
+   d2=s/m2   
+   u2=d2*n2
+   r2=17.62 #rullis s dvumja nasadkomi i vedrom
+   k2=6.47 #2 kisti
+   w2=4.69 #cena scotca
+   o2=50 #dlina skotca
+   t2=(p/o2)*w2 #узнаем сколько упаковок скотча понадобится 
+   i2=(r2+k2)*l+t2
+   q2=i2+u2
+   print("Videja budzeta tarifa ietvaros cena par krasu un darbarikiem griestu krasosanai bus - " ,round(q2,2), "eiro")   
+elif c==3:
+   m3=9 
+   n3=5.30
+   d3=s/m3   
+else:
+   print("nav pareizi ievadita izvele")
