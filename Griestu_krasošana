@@ -10,7 +10,7 @@ print('Jusu griestu perimetrs ir-',p,'m')
 if c==1:
     m1=16 #metri kvadratnie na 1 litr kraski
     n1=1.26 #dengi na 1 litr kraski
-    d1=s/m1 #mi uznaem skolko litrov kraski nado
+    d1=ceil(s/m1) #mi uznaem skolko litrov kraski nado
     u1=d1*n1 #cana za krasku
     print("Jums bus nepieciesams nopirkt",d1,"krasas, kas maksas",u1,"euro")
     r1=8.56 #rullis s vedrom
