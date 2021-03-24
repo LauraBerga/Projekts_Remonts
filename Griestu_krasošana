@@ -8,40 +8,42 @@ p=(a+b)*2
 print('Jusu griestu laukums ir-',s,'m2')
 print('Jusu griestu perimetrs ir-',p,'m')
 if c==1:
-   m1=16 #metri kvadratnie na 1 litr kraski
-   n1=1.26 #dengi na 1 litr kraski
-   d1=s/m1 #mi uznaem skolko litrov kraski nado
-   u1=d1*n1 #cana za krasku
-   r1=8.56 #rullis s vedrom
-   k1=1.99 #kistj 10cm
-   w1=1,89
-   o2=50
-   t2=(p/o2)*w1
-   i1=(r1+k1)*l #cena vseh instrumentov vzavisimosti ot kolicestva ludej
-   q1=i1+u1 #summa vsego
-   print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un krasu bus- ",round(q1,2),"euro")
+    m1=16 #metri kvadratnie na 1 litr kraski
+    n1=1.26 #dengi na 1 litr kraski
+    d1=s/m1 #mi uznaem skolko litrov kraski nado
+    u1=d1*n1 #cana za krasku
+    print("Jums bus nepieciesams nopirkt",d1,"krasas, kas maksas",u1,"euro")
+    r1=8.56 #rullis s vedrom
+    k1=1.99 #kistj 10cm
+    w1=1,89 #cena desovogo obicnogo skotcha
+    o1=50 #dlina obicnogo desovogo skotcha
+    t1=(p/o1)*w1
+    i1=(r1+k1)*l+t1 #cena vseh instrumentov vzavisimosti ot kolicestva ludej
+    q1=i1+u1 #summa vsego
+    print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un krasu bus- ",round(q1,2),"euro")
 elif c==2:
-   m2=13
-   n2=3.60
-   d2=s/m2
-   u2=d2*n2 #cana za krasku
-   r2=17.62 #rullis s 2 nasadkami i vedrom
-   k2=6.47 #2 kisti. menjse i bolse
-   w2=4.69 #skotc
-   o2=50 #dlina skotca
-   t2=(p/o2)*w2 #uznaem skolko upakovok skotca ponadobitsja
-   i2=(r2+k2)*l+t2 #cena vseh instrumentov vzavisimosti ot kolicestva ludej
-   q2=i2+u2  
-   print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un krasu bus- ",round(q2,2),"euro")
+    m2=13
+    n2=3.60
+    d2=s/m2
+    u2=d2*n2 #cana za krasku
+    print("Jums bus nepieciesams nopirkt",d2,"krasas, kas maksas",u2,"euro")
+    r2=17.62 #rullis s 2 nasadkami i vedrom
+    k2=6.47 #2 kisti. menjse i bolse
+    w2=4.69 #skotc
+    o2=50 #dlina skotca
+    t2=(p/o2)*w2 #uznaem skolko upakovok skotca ponadobitsja
+    i2=(r2+k2)*l+t2 #cena vseh instrumentov vzavisimosti ot kolicestva ludej
+    q2=i2+u2  
+    print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un krasu bus- ",round(q2,2),"euro")
 elif c==3:
-   m3=9 
-   n3=5.30
-   d3=s/m3  
-   u3=d3*n3 #cana za krasku
-   r3=8.56 #rullis s vedrom
-   k3=1.99 #kistj 10cm
-   i3=(r3+k3)*l #cena vseh instrumentov vzavisimosti ot kolicestva ludej
-   q3=i3+u3  
-   print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un krasu bus- ",round(q3,2),"euro")
+    m3=9 
+    n3=5.30
+    d3=s/m3  
+    u3=d3*n3 #cana za krasku
+    r3=8.56 #rullis s vedrom
+    k3=1.99 #kistj 10cm
+    i3=(r3+k3)*l #cena vseh instrumentov vzavisimosti ot kolicestva ludej
+    q3=i3+u3  
+    print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un krasu bus- ",round(q3,2),"euro")
 else:
-   print("nav pareizi ievadita izvele")
+    print("nav pareizi ievadita izvele")
