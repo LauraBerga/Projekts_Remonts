@@ -1,1 +1,49 @@
+from math import *
+j=int(input("Kadas figuras forma ir jusu istaba? 1-kvadrata forma 2-taisnstura forma"))
+l=int(input("Cik cilveku piedalisies remonta darbiem-"))
+if j==1:
+    A1=float(input("Ievadi sienas garumu metros- "))
+    B1=float(input("Ievadi sienas platumu metros- "))
+    C1=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs "))
+    S1=A1*B1
+    P1=(A1+B1)*2
+    z1=int(input("Ievadiet durvju daudzumu jusu istaba-"))
+    x1=float(input("Ievadi durvju garumu metros-"))
+    y1=float(input("Ievadi durvju platumu metros-"))
+    sxy=x1*y1 #plosadj dveri
+    h1=int(input("Ievadiet logu daudzumu jusu istaba-"))
+    f1=float(input("Ievadi loga garumu metros-"))
+    v1=float(input("Ievadi loga platumu metros-"))
+    sfv=f1*v1 #ploshadj okna
+    
+    
+    print('Jusu griestu laukums ir-',S1,'m2')
+    print('Jusu griestu perimetrs ir-',P1,'m')
+    if C1==1:
+        
+      
+    elif C1==2:
+        
+    elif C1==3:
+       
+    else:
+        print("nav pareizi ievadita izvele")     
+elif j==2:
+    a=float(input("Ievadi sienas garumu metros- "))
+    b=float(input("Ievadi griesta platumu metros- "))
+    c=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs "))
+    s=a*b
+    p=(a+b)*2
+    print('Jusu griestu laukums ir-',s,'m2')
+    print('Jusu griestu perimetrs ir-',p,'m')
+    if c==1:
+    
+    elif c==2:
+    
+    elif c==3:
+    
+    else:
+        print("nav pareizi ievadita izvele")    
+else:
+     print("nav pareizi ievadita izvele")
 
