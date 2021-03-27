@@ -1,0 +1,17 @@
+from math import *
+a=float(input("Ievadi griesta garumu metros- "))
+b=float(input("Ievadi griesta platumu metros- "))
+l=int(input("Cik cilveku piedalisies remonta darbiem-"))
+c=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs "))
+s=a*b
+p=(a+b)*2
+print('Jusu griestu laukums ir-',s,'m2')
+print('Jusu griestu perimetrs ir-',p,'m')
+if c==1:
+   
+elif c==2:
+    
+elif c==3:
+    
+else:
+    print("nav pareizi ievadita izvele")
