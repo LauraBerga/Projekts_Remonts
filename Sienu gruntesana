@@ -68,13 +68,25 @@ if j==1:
     else:
         print("nav pareizi ievadita izvele")     
 elif j==2:
-    a=float(input("Ievadi sienas garumu metros- "))
-    b=float(input("Ievadi griesta platumu metros- "))
-    c=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs "))
-    s=a*b
-    p=(a+b)*2
-    print('Jusu griestu laukums ir-',s,'m2')
-    print('Jusu griestu perimetrs ir-',p,'m')
+   A2=float(input("Ievadi sienas garumu metros - "))
+    B2=float(input("Ievadi sienas platumu metros - "))
+    X2=float(input("Ievadi jusu otras sienas garumu metros - "))
+    Y2=float(input("Ievadi jusu otras sienas platumu metros - "))
+    C2=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs - "))
+    S2=((A2*B2)*2)+((X2*Y2)*2)
+    P2=(((A2+B2)*2)*2)+(((X2*Y2)*2)*2)
+    z2=int(input("Ievadiet durvju daudzumu jusu istaba -"))
+    x2=float(input("Ievadi durvju garumu metros -"))
+    y2=float(input("Ievadi durvju platumu metros -"))
+    sxy2=x2*y2 #plosadj dveri
+    kxy2=sxy2*z2 #plosadj vseh dverej
+    h2=int(input("Ievadiet logu daudzumu jusu istaba -"))
+    f2=float(input("Ievadi loga garumu metros -"))
+    v2=float(input("Ievadi loga platumu metros -"))
+    sfv2=f2*v2 #ploshadj okna
+    kfv2=sfv2*h2 #plosadj vseh okon
+    print('Jusu sienas laukums ir-',S2,'m2')
+    print('Jusu sienas perimetrs ir-',P2,'m')    
     if c==1:
     
     elif c==2:
