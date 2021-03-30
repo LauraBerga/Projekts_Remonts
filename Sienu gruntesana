@@ -1,26 +1,38 @@
 from math import *
-j=int(input("Kadas figuras forma ir jusu istaba? 1-kvadrata forma 2-taisnstura forma"))
-l=int(input("Cik cilveku piedalisies remonta darbiem-"))
+j=int(input("Kadas figuras forma ir jusu istaba? 1-kvadrata forma 2-taisnstura forma -"))
+l=int(input("Cik cilveku piedalisies remonta darbiem -"))
 if j==1:
-    A1=float(input("Ievadi sienas garumu metros- "))
-    B1=float(input("Ievadi sienas platumu metros- "))
-    C1=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs "))
-    S1=A1*B1
+    A1=float(input("Ievadi sienas garumu metros - "))
+    B1=float(input("Ievadi sienas platumu metros - "))
+    C1=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs - "))
+    S1=(A1*B1)*4
     P1=(A1+B1)*2
-    z1=int(input("Ievadiet durvju daudzumu jusu istaba-"))
-    x1=float(input("Ievadi durvju garumu metros-"))
-    y1=float(input("Ievadi durvju platumu metros-"))
+    z1=int(input("Ievadiet durvju daudzumu jusu istaba -"))
+    x1=float(input("Ievadi durvju garumu metros -"))
+    y1=float(input("Ievadi durvju platumu metros -"))
     sxy=x1*y1 #plosadj dveri
-    h1=int(input("Ievadiet logu daudzumu jusu istaba-"))
-    f1=float(input("Ievadi loga garumu metros-"))
-    v1=float(input("Ievadi loga platumu metros-"))
+    kxy=sxy*z1 #plosadj vseh dverej
+    h1=int(input("Ievadiet logu daudzumu jusu istaba -"))
+    f1=float(input("Ievadi loga garumu metros -"))
+    v1=float(input("Ievadi loga platumu metros -"))
     sfv=f1*v1 #ploshadj okna
-    
-    
-    print('Jusu griestu laukums ir-',S1,'m2')
-    print('Jusu griestu perimetrs ir-',P1,'m')
+    kfv=sfv*h1 #plosadj vseh okon
+    print('Jusu sienas laukums ir-',S1,'m2')
+    print('Jusu sienas perimetrs ir-',P1,'m')
     if C1==1:
-        
+        D1=0.05 #l gruntovki na metr v kvadrate
+        G1=3.33 #cena gruntovki na 1 litr
+        os1=S1-(kxy+kfv) #plosadj sten bez okon i dverej
+        M1=ceil(os1*D1) # skolko litrov gruntovki nuzno kupuitj
+        R1=M1*G1 #cena za vsu gruntovku
+        print("Jums bus nepieciesams nopirkt",M1,"grunta iepakojumus, kas maksas",round(R1,2),"euro")
+        L1=7.49 #dlinnij spatel ctobi razglazivatj stenu
+        T1=4.99 #terka
+        U1=0.96 #malenjkij spatel
+        N1=(L1+T1+U1)*l #cena za vse instrumenti v zavisimosti ot ludej
+        print("Instrumentu cena",l,"cilvekiem bus",round(N1,2),"euro")
+        Q1=R1+N1
+        print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un gruntu bus- ",round(Q1,2),"euro")
       
     elif C1==2:
         
