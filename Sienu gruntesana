@@ -17,6 +17,9 @@ if j==1:
     v1=float(input("Ievadi loga platumu metros -"))
     sfv=f1*v1 #ploshadj okna
     kfv=sfv*h1 #plosadj vseh okon
+    print('----------------------')
+    print('------REZULTATI-------')
+    print('----------------------')
     print('Jusu sienas laukums ir-',S1,'m2')
     print('Jusu sienas perimetrs ir-',P1,'m')
     if C1==1:
@@ -85,6 +88,9 @@ elif j==2:
     v2=float(input("Ievadi loga platumu metros -"))
     sfv2=f2*v2 #ploshadj okna
     kfv2=sfv2*h2 #plosadj vseh okon
+    print('----------------------')
+    print('------REZULTATI-------')
+    print('----------------------')
     print('Jusu sienas laukums ir-',S2,'m2')
     print('Jusu sienas perimetrs ir-',P2,'m')    
     if c==1:
