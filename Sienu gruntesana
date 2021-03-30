@@ -35,7 +35,20 @@ if j==1:
         print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un gruntu bus- ",round(Q1,2),"euro")
       
     elif C1==2:
-        
+         D2=0.05 #l gruntovki na metr v kvadrate
+        G2=3.33 #cena gruntovki na 1 litr
+        os2=S2-(kxy+kfv) #plosadj sten bez okon i dverej
+        M2=ceil(os2*D2) # skolko litrov gruntovki nuzno kupuitj
+        R2=M2*G2 #cena za vsu gruntovku
+        print("Jums bus nepieciesams nopirkt",M2,"grunta iepakojumus, kas maksas",round(R2,2),"euro")
+        L2=8.99 #spatel srednej dlini
+        J2=10.99 #dlinnij spatel ctobi razglazivatj stenu
+        T2=6.99 #terka
+        U2=6.99 #malenjkij spatel
+        N2=(L2+J2+T2+U2)*l #cena za vse instrumenti v zavisimosti ot ludej
+        print("Instrumentu cena",l,"cilvekiem bus",round(N2,2),"euro")
+        Q2=R2+N2
+        print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un gruntu bus- ",round(Q2,2),"euro")        
     elif C1==3:
        
     else:
