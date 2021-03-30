@@ -101,11 +101,37 @@ elif j==2:
         print("Instrumentu cena",l,"cilvekiem bus",round(N4,2),"euro")
         Q4=R4+N4
         print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un gruntu bus- ",round(Q4,2),"euro")        
-    
     elif c==2:
-    
+        D5=0.05 #l gruntovki na metr v kvadrate
+        G5=3.33 #cena gruntovki na 1 litr
+        os5=S2-(kxy2+kfv2) #plosadj sten bez okon i dverej
+        M5=ceil(os5*D5) # skolko litrov gruntovki nuzno kupuitj
+        R5=M5*G5 #cena za vsu gruntovku
+        print("Jums bus nepieciesams nopirkt",M5,"grunta iepakojumus, kas maksas",round(R5,2),"euro") 
+        L5=8.99 #spatel srednej dlini
+        J5=10.99 #dlinnij spatel ctobi razglazivatj stenu
+        T5=6.99 #terka
+        U5=1.99 #malenjkij spatel
+        N5=(L5+J5+T5+U5)*l #cena za vse instrumenti v zavisimosti ot ludej
+        print("Instrumentu cena",l,"cilvekiem bus",round(N5,2),"euro")
+        Q5=R5+N5
+        print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un gruntu bus- ",round(Q5,2),"euro")  
     elif c==3:
-    
+        D6=0.05 #l gruntovki na metr v kvadrate
+        G6=3.33 #cena gruntovki na 1 litr
+        os6=S2-(kxy2+kfv2) #plosadj sten bez okon i dverej
+        M6=ceil(os6*D6) # skolko litrov gruntovki nuzno kupuitj
+        R6=M6*G6 #cena za vsu gruntovku
+        print("Jums bus nepieciesams nopirkt",M6,"grunta iepakojumus, kas maksas",round(R6,2),"euro")     
+        L6=21.99 #spatel srednej dlini
+        J6=18.99 #dlinnij spatel ctobi razglazivatj stenu
+        H6=4.99
+        T6=18.99 #terka
+        U6=6.99 #malenjkij spatel
+        N6=(L6+J6+T6+U6+H6)*l #cena za vse instrumenti v zavisimosti ot ludej
+        print("Instrumentu cena",l,"cilvekiem bus",round(N6,2),"euro")
+        Q6=R6+N6
+        print("Visletaka cena, budzeta tarifa ietvaros, par instrumetiem un gruntu bus- ",round(Q6,2),"euro") 
     else:
         print("nav pareizi ievadita izvele")    
 else:
