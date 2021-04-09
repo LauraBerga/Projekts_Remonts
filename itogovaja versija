@@ -74,7 +74,7 @@ if j==1:
         vs1=os1/sh1
         vp1=s/ph1
         vo1=os1/oh1
-        vr1=(vs1+vp1+vo1+ss1+ps1+ko1)/l #obsee vremja
+        vr1=((vs1+vp1+vo1)/l)+ss1+ps1+ko1 #obsee vremja
         print("Veicot so darbu jums bus nepieciesams",round(vr1,2),"stundas")
     elif C1==2:
         m2=13
@@ -113,7 +113,18 @@ if j==1:
         cen2=E2*W2 #cena za opredelennoe kolicestvo rulonov
         print("Jums bus nepieciesams nopirkt",E2,"tapesu iepakojumus, kas maksas",round(cen2,2),"euro")   
         kop2=cen2+Q2+q2
-        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop2,2),"euro")        
+        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop2,2),"euro") 
+        sh2=5 #metrov kvadratnih za 1 cas spakluet 1 celovek
+        ph2=2.5 #metrov kvadratnih potalka mozet pokrasitj 1 celovek za cas
+        oh2=3.3 #metrov kvadratnih oboev mozet pokleitj 1 celovek za cas
+        ss2=8 #stolko sohnet spaklevka
+        ps2=6 #stolko sohnet potalok
+        ko2=4 #stolko sohnet klej dlja oboev
+        vs2=os2/sh2
+        vp2=s/ph2
+        vo2=os2/oh2
+        vr2=((vs2+vp2+vo2)/l)+ss2+ps2+ko2 #obsee vremja
+        print("Veicot so darbu jums bus nepieciesams",round(vr2,2),"stundas")        
     elif C1==3:
         m3=9 
         n3=5.30
@@ -153,7 +164,18 @@ if j==1:
         cen3=E3*W3 #cena za opredelennoe kolicestvo rulonov
         print("Jums bus nepieciesams nopirkt",E3,"tapesu iepakojumus, kas maksas",round(cen3,2),"euro")     
         kop3=cen3+Q3+q3
-        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop3,2),"euro")        
+        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop3,2),"euro")  
+        sh3=5 #metrov kvadratnih za 1 cas spakluet 1 celovek
+        ph3=2.5 #metrov kvadratnih potalka mozet pokrasitj 1 celovek za cas
+        oh3=3.3 #metrov kvadratnih oboev mozet pokleitj 1 celovek za cas
+        ss3=8 #stolko sohnet spaklevka
+        ps3=6 #stolko sohnet potalok
+        ko3=4 #stolko sohnet klej dlja oboev
+        vs3=os3/sh3
+        vp3=s/ph3
+        vo3=os3/oh3
+        vr3=((vs3+vp3+vo3)/l)+ss3+ps3+ko3 #obsee vremja
+        print("Veicot so darbu jums bus nepieciesams",round(vr3,2),"stundas")        
     else:
         print("nav pareizi ievadita izvele")
 elif j==2:
@@ -221,7 +243,18 @@ elif j==2:
         cen4=E4*W4 #cena za opredelennoe kolicestvo rulonov
         print("Jums bus nepieciesams nopirkt",E4,"tapesu iepakojumus, kas maksas",round(cen4,2),"euro") 
         kop4=cen4+Q4+q4
-        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop4,2),"euro")        
+        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop4,2),"euro")   
+        sh4=5 #metrov kvadratnih za 1 cas spakluet 1 celovek
+        ph4=2.5 #metrov kvadratnih potalka mozet pokrasitj 1 celovek za cas
+        oh4=3.3 #metrov kvadratnih oboev mozet pokleitj 1 celovek za cas
+        ss4=8 #stolko sohnet spaklevka
+        ps4=6 #stolko sohnet potalok
+        ko4=4 #stolko sohnet klej dlja oboev
+        vs4=os4/sh4
+        vp4=s1/ph4
+        vo4=os4/oh4
+        vr4=((vs4+vp4+vo4)/l)+ss4+ps4+ko4 #obsee vremja
+        print("Veicot so darbu jums bus nepieciesams",round(vr4,2),"stundas")        
     elif C2==2:       
         m5=13
         n5=3.60
@@ -259,21 +292,33 @@ elif j==2:
         cen5=E5*W5 #cena za opredelennoe kolicestvo rulonov
         print("Jums bus nepieciesams nopirkt",E5,"tapesu iepakojumus, kas maksas",round(cen5,2),"euro")   
         kop5=cen5+Q5+q5
-        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop5,2),"euro")        
+        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop5,2),"euro")  
+        sh5=5 #metrov kvadratnih za 1 cas spakluet 1 celovek
+        ph5=2.5 #metrov kvadratnih potalka mozet pokrasitj 1 celovek za cas
+        oh5=3.3 #metrov kvadratnih oboev mozet pokleitj 1 celovek za cas
+        ss5=8 #stolko sohnet spaklevka
+        ps5=6 #stolko sohnet potalok
+        ko5=4 #stolko sohnet klej dlja oboev
+        vs5=os5/sh5
+        vp5=s1/ph5
+        vo5=os5/oh5
+        vr5=((vs5+vp5+vo5)/l)+ss5+ps5+ko5 #obsee vremja
+        print("Veicot so darbu jums bus nepieciesams",round(vr5,2),"stundas")        
     elif C2==3:
         m6=9 
         n6=5.30
         d6=ceil(s1/m6)  
         u6=d6*n6 #cana za krasku
         print("Jums bus nepieciesams nopirkt",d6,"krasa iepakojumus, kas maksas",round(u6,2),"euro")
-        r6=8.56 #rullis s vedrom
-        k6=1.99 #kistj 10cm
+        r6=19.79 #rullis s vedrom
+        str6=2.29
+        k6=16.28  #dve kistji
         w6=8.80
         o6=25
         t6=ceil(p1/o6) #uznaem skolko upakovok skotca ponadobitsja
         g6=t6*w6 #cena za opredelennoe kolicestvo upakovok
         print("Jums bus nepieciesams nopirkt",t6,"skotcha iepakojumus")
-        i6=(r6+k6)*l+g6 #cena vseh instrumentov vzavisimosti ot kolicestva ludej
+        i6=(r6+k6+str6)*l+g6 #cena vseh instrumentov vzavisimosti ot kolicestva ludej
         print("Instrumentu cena",l,"cilvekiem bus",round(i6,2),"euro")
         q6=i6+u6  
         print("Dargaka cena, tarifa ietvaros, par instrumetiem un krasu bus- ",round(q6,2),"euro")         
@@ -298,6 +343,17 @@ elif j==2:
         cen6=E6*W6 #cena za opredelennoe kolicestvo rulonov
         print("Jums bus nepieciesams nopirkt",E6,"tapesu iepakojumus, kas maksas",round(cen6,2),"euro")  
         kop6=cen6+Q6+q6
-        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop6,2),"euro")        
+        print("Kopeja summa par remontu noteikta tarifa ietvaros bus - ",round(kop6,2),"euro")  
+        sh6=5 #metrov kvadratnih za 1 cas spakluet 1 celovek
+        ph6=2.5 #metrov kvadratnih potalka mozet pokrasitj 1 celovek za cas
+        oh6=3.3 #metrov kvadratnih oboev mozet pokleitj 1 celovek za cas
+        ss6=8 #stolko sohnet spaklevka
+        ps6=6 #stolko sohnet potalok
+        ko6=4 #stolko sohnet klej dlja oboev
+        vs6=os6/sh6
+        vp6=s1/ph6
+        vo6=os6/oh6
+        vr6=((vs6+vp6+vo6)/l)+ss6+ps6+ko6 #obsee vremja
+        print("Veicot so darbu jums bus nepieciesams",round(vr6,2),"stundas")        
     else:
         print("nav pareizi ievadita izvele")        
