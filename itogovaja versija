@@ -1,46 +1,30 @@
 from math import *
 j = 0
-C1=0
-
-# parbaude, vai forma ir taisnstura, atgriez True vai False
-def navAtlautaIstabasForma(forma):
+def navAtlautaIstabasForma(forma): # parbaude, vai forma ir taisnstura, atgriez True vai False
   if j != 1 and j != 2:
     return True
   return False
-
-# pieprasa no lietotaja tarifu un atgriez to
-def dabutTarifu():
+def dabutTarifu(): # pieprasa no lietotaja tarifu un atgriez to
   tarifs = 0
   while tarifs !=1 and tarifs !=2 and tarifs !=3:
     tarifs=int(input("Kadu budzetas tarifu gribat izveleties? 1-lets, 2-videjais, 3-dargs - "))
     if tarifs !=1 and tarifs !=2 and tarifs !=3:
       print("Ludzu izvelieties 1, 2 vai 3")
   return tarifs
-
-# saskaitit laukumu
-def laukums(x, y):
+def laukums(x, y): # saskaitit laukumu
   return x*y
-
-# saskaitit perimetru
-def perimetrs(x, y):
+def perimetrs(x, y): # saskaitit perimetru
   return (x+y)*2
-
-# saskaitit 4 sienu perimetru prieks kvadrata
-def cetruSienuPerimetrs(x, y):
+def cetruSienuPerimetrs(x, y): # saskaitit 4 sienu perimetru prieks kvadrata
   return perimetrs(x, y)*4
-
-# saskaitit 4 sienu laukumu prieks kvadrata
-def cetruSienuLaukums(x, y):
+def cetruSienuLaukums(x, y):# saskaitit 4 sienu laukumu prieks kvadrata
   return laukums(x, y)*4
-
 # galvena dala
 while j != 1 and j != 2:
   j=int(input("Kadas figuras forma ir jusu istaba? 1-kvadrata forma 2-taisnstura forma -"))
   if navAtlautaIstabasForma(j):
     print("Ludzu izveleties 1 vai 2")
-
 l=int(input("Cik cilveku piedalisies remonta darbiem -"))
-
 # kvadrata forma
 if j==1:
     a=float(input("Ievadi griesta garumu metros- "))
@@ -222,7 +206,6 @@ if j==1:
         print("Veicot so darbu jums bus nepieciesams",round(vr3,2),"stundas")        
     else:
         print("nav pareizi ievadita izvele")
-
 # taisnstura forma
 elif j==2:
     a1=float(input("Ievadi griesta garumu metros- "))
